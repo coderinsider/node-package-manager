@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js --exec babel-node"
+  },
   "dependencies": {
     "ansi-regex": "^2.1.1",
     "ansi-styles": "^2.2.1",
@@ -56,6 +59,7 @@
     "expand-brackets": "^0.1.5",
     "expand-range": "^1.8.2",
     "expres": "^0.0.5",
+    "express": "^4.18.2",
     "extend-shallow": "^3.0.2",
     "extglob": "^0.3.2",
     "filename-regex": "^2.0.1",
@@ -112,6 +116,7 @@
     "mkdirp": "^0.5.6",
     "ms": "^2.0.0",
     "nanomatch": "^1.2.13",
+    "nodemon": "^3.0.1",
     "normalize-path": "^2.1.1",
     "object-assign": "^4.1.1",
     "object-copy": "^0.1.0",
@@ -148,6 +153,7 @@
     "snapdragon": "^0.8.2",
     "snapdragon-node": "^2.1.1",
     "snapdragon-util": "^3.0.1",
+    "socket.io": "^4.7.2",
     "source-map": "^0.5.7",
     "source-map-resolve": "^0.5.3",
     "source-map-support": "^0.4.18",
@@ -171,10 +177,12 @@
     "v8flags": "^2.1.1",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/node": "^7.22.10",
+    "@babel/preset-env": "^7.22.10"
+  }
 }
